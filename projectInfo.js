@@ -10,6 +10,16 @@ const projects = [
     sourceLink: 'https://github.com/killy10o10/Muvi-WebApp',
     buttonID: 'button-1',
   },
+  {
+    image: './resource/610music.png',
+    title: '610Music',
+    technologies: ['React', 'Gatsby', 'JavaScript', 'Sass'],
+    description:
+      'This is the official website of 610Music. A record label based in California. This website makes use of the Spotify API and user can stream songs of Artists on the 610Music label. It was built with Gatsby.JS',
+    liveVersion: 'https://www.610music.com/artists',
+    sourceLink: 'https://github.com/killy10o10/610Music',
+    buttonID: 'button-4',
+  },
   //= == Card 2===//
   {
     image: './resource/joyful-learning.png',
@@ -17,10 +27,8 @@ const projects = [
     technologies: ['CSS', 'Sass', 'HTML', 'JavaScript'],
     description:
       'This is a website for kids school. It has different pages for various sections and a responsive layout.',
-    liveVersion:
-      'https://killy10o10.github.io/HTML-CSS-JavaScript-capstone-project/',
-    sourceLink:
-      'https://github.com/killy10o10/HTML-CSS-JavaScript-capstone-project',
+    liveVersion: 'https://killydev.me/joyful-learning/',
+    sourceLink: 'https://github.com/killy10o10/joyful-learning',
     buttonID: 'button-2',
   },
   //= == Card 3===//
@@ -35,16 +43,6 @@ const projects = [
     buttonID: 'button-3',
   },
   //= == Card 4===//
-  {
-    image: './resource/610music.png',
-    title: '610Music',
-    technologies: ['React', 'Gatsby', 'JavaScript', 'Sass'],
-    description:
-      'This is the official website of 610Music. A record labale based in California and secondary office in Accra, Ghana. it was built with Gatsby.JS',
-    liveVersion: 'https://www.610music.com/artists',
-    sourceLink: 'https://github.com/killy10o10/610Music',
-    buttonID: 'button-4',
-  },
   //= == Card 5===//
   {
     image: './resource/youtube-player.png',
@@ -52,19 +50,18 @@ const projects = [
     technologies: ['API', 'CSS', 'JavaScript', 'HTML'],
     description:
       'This is a clone of the official youtube page. Videos are fetched using youtube API.',
-    liveVersion: 'https://killy10o10.github.io/youtube-player-microverse/',
-    sourceLink: 'https://github.com/killy10o10/youtube-player-microverse',
+    liveVersion: 'https://killydev.me/youtube-player/',
+    sourceLink: 'https://github.com/killy10o10/youtube-player',
     buttonID: 'button-5',
   },
   //= == Card 6===//
   {
-    image: './resource/project-thumbnail-desktop.svg',
-    title: 'Keeping track of hundreds of components',
-    technologies: ['Ruby on rails', 'CSS', 'JavaScript'],
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    liveVersion: 'https://killy10o10.github.io/Portfolio-Mobile/',
-    sourceLink: 'https://github.com/killy10o10/Portfolio-Mobile',
+    image: './resource/deck-of-cards.png',
+    title: 'Game of War!',
+    technologies: ['JavaScript', 'Restful API', 'CSS', 'HTML'],
+    description: `This is an An Api based game with cards from <a href="https://www.deckofcardsapi.com." class="sea-green">Deck of Cards API</a>.The objective of the game is to win all of the cards. The deck is divided evenly among the players, giving each a down stack. In unison, each player reveals the top card of their deck—this is a "battle"—and the player with the higher card takes both of the cards played and moves them to their stack.`,
+    liveVersion: 'https://killydev.me/deck-of-cards/',
+    sourceLink: 'https://github.com/killy10o10/deck-of-cards',
     buttonID: 'button-6',
   },
 ];
@@ -83,10 +80,10 @@ const projectCards = projects
   ${project.technologies.map((technology) => `<li>${technology}</li>`).join('')}
   </ul>
   <button type="button" class="button modal-button" id="${
-  project.buttonID
-}">See Project</button>
+    project.buttonID
+  }">See Project</button>
 </div>
-</div>`,
+</div>`
   )
   .join('');
 projectSection.innerHTML += projectCards;
@@ -105,8 +102,8 @@ const cardModal = projects.map(
           <h4 class="project-card-heading">${card.title}</h4>
           <ul class="flex-list">
            ${card.technologies
-    .map((technology) => `<li>${technology}</li>`)
-    .join('')}
+             .map((technology) => `<li>${technology}</li>`)
+             .join('')}
           </ul>
         </div>
         <div class="project-buttons">
@@ -120,7 +117,7 @@ const cardModal = projects.map(
       </div>
       <p class="project-description">${card.description}</p>
     </div>
-  </div>`,
+  </div>`
 );
 
 const buttons = Array.from(document.querySelectorAll('.modal-button'));

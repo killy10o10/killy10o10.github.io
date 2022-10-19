@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #172b4d;
   display: flex;
   flex-direction: column;
@@ -138,6 +139,14 @@ header {
   font-size: 25px;
   margin: 58px 0;
   list-style: none;
+}
+
+.social-handles * {
+  transition: all 250ms ease-in-out;
+}
+
+.social-handles *:hover {
+  transform: translateY(-2px);
 }
 
 .arrow {

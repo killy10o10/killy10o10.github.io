@@ -56,12 +56,12 @@ const projects = [
   },
   //= == Card 6===//
   {
-    image: './resource/deck-of-cards.png',
-    title: 'Game of War!',
-    technologies: ['JavaScript', 'Restful API', 'CSS', 'HTML'],
-    description: `This is an An Api based game with cards from <a href="https://www.deckofcardsapi.com." class="sea-green">Deck of Cards API</a>.The objective of the game is to win all of the cards. The deck is divided evenly among the players, giving each a down stack. In unison, each player reveals the top card of their deck—this is a "battle"—and the player with the higher card takes both of the cards played and moves them to their stack.`,
-    liveVersion: 'https://killydev.me/deck-of-cards/',
-    sourceLink: 'https://github.com/killy10o10/deck-of-cards',
+    image: './resource/Markdown-notes-taker.png',
+    title: 'Markdown Note Taker',
+    technologies: ['JavaScript', 'React', 'CSS', 'HTML'],
+    description: `This is a note taking application built with React. It allows users to type in markdown and saves the notes in realtime using the browser's local storage. Users can preview notes typed in markdown in a properly formatted view.`,
+    liveVersion: 'https://killydev.me/Markdown-Note-Taker/',
+    sourceLink: 'https://github.com/killy10o10/Markdown-Note-Taker',
     buttonID: 'button-6',
   },
 ];

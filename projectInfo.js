@@ -56,12 +56,12 @@ const projects = [
   },
   //= == Card 6===//
   {
-    image: './resource/Markdown-notes-taker.png',
-    title: 'Markdown Note Taker',
-    technologies: ['JavaScript', 'React', 'CSS', 'HTML'],
-    description: `This is a note taking application built with React. It allows users to type in markdown and saves the notes in realtime using the browser's local storage. Users can preview notes typed in markdown in a properly formatted view.`,
-    liveVersion: 'https://killydev.me/Markdown-Note-Taker/',
-    sourceLink: 'https://github.com/killy10o10/Markdown-Note-Taker',
+    image: './resource/react-country-gecko.png',
+    title: 'React Country Gecko',
+    technologies: ['React', 'Redux', 'JavaScript', 'API'],
+    description: `This is a mobile web app which uses actual live data from restCountries API and populates the homepage with a list of countries, their names, flag, population and capital city. It has a search feature where users can search for any country from the API and then get more details of the country on a new page when selected.`,
+    liveVersion: 'https://react-country-gecko.netlify.app/',
+    sourceLink: 'https://github.com/killy10o10/react-country-gecko',
     buttonID: 'button-6',
   },
 ];

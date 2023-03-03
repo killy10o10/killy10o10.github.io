@@ -107,10 +107,10 @@ const cardModal = projects.map(
           </ul>
         </div>
         <div class="project-buttons">
-          <a  class="button project-button" href="${card.liveVersion}">See Live
+          <a  class="button project-button" href="${card.liveVersion}" target="_blank">See Live
             <img src="./resource/see-live-icon.svg" alt="">
           </a>
-          <a class="button project-button" href="${card.sourceLink}">See Source
+          <a class="button project-button" href="${card.sourceLink}" target="_blank">See Source
             <img src="./resource/github_icon.svg" alt="">
           </a>
       </div>

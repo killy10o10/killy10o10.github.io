@@ -25,6 +25,9 @@ a {
 
 header {
   display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -426,8 +429,8 @@ footer {
 /* Desktop verision Media Queries */
 @media only screen and (min-device-width: 768px) {
   header {
-    position: absolute;
-    align-self: center;
+    align-items: center;
+    justify-content: center;
     height: 72px;
   }
 

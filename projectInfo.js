@@ -45,13 +45,13 @@ const projects = [
   //= == Card 4===//
   //= == Card 5===//
   {
-    image: './resource/youtube-player.png',
-    title: 'Youtube Clone',
-    technologies: ['API', 'CSS', 'JavaScript', 'HTML'],
+    image: './resource/vanlife.png',
+    title: 'VanLife',
+    technologies: ['Firebase', 'React', 'Framer Motion', 'Sass'],
     description:
-      'This is a clone of the official youtube page. Videos are fetched using youtube API.',
-    liveVersion: 'https://killydev.me/youtube-player/',
-    sourceLink: 'https://github.com/killy10o10/youtube-player',
+      'This is a rental site for renting out decked camper vans.',
+    liveVersion: 'https://killy-vanlife.netlify.app/',
+    sourceLink: 'https://github.com/killy10o10/vanLife',
     buttonID: 'button-5',
   },
   //= == Card 6===//
